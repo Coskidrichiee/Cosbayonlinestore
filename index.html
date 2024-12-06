@@ -45,7 +45,7 @@ session_start();
     <div class="loader"><img src="images/loading.gif" alt="" /></div>
 </div>
 <!-- Hidden input field to store login status -->
-<input type="hidden" id="loginStatus" value="<?php echo isset($_SESSION['loggedin']) && $_SESSION['loggedin'] ? 'true' : 'false'; ?>">
+<!-- <input type="hidden" id="loginStatus" value="<?php echo isset($_SESSION['loggedin']) && $_SESSION['loggedin'] ? 'true' : 'false'; ?>"> -->
 
   <div style="position: fixed;margin-left: 8px;margin-top: 4px;">
     <img style="width: 5rem;border-radius: 30px;" src="images/cosbayonlinestoreLogobyDesigner-removebg-preview.png" alt="" class="logo">
@@ -130,11 +130,11 @@ session_start();
                   </div>
                    <!-- buy button -->
                     <!-- Conditionally display Buy Now button -->
-            <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+<!--             <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?> -->
               <button type="button" class="btn-buy" onclick="submitCart()">Buy Now</button>
-            <?php else: ?>
+<!--             <?php else: ?>
               <p style="color: red; font-weight: bold;">Please <a href="login.html">log in</a> to complete your purchase.</p>
-            <?php endif; ?>
+            <?php endif; ?> -->
                     <!-- cart Close -->
                     <i class='bx bx-x' id="close-cart" ></i>
                </div>

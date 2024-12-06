@@ -1,6 +1,6 @@
-<?php
+<!-- <?php
 session_start();
-?>
+?> -->
 
 <!DOCTYPE html>
 <html>
@@ -92,17 +92,17 @@ session_start();
            <button style="background-color: #eb657b;" class="btn btn-outline-secondary" type="submit">Search</button>
           </form>
             <nav>
-        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+<!--         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
             <a style="text-decoration: none;" href="logout.php">
                 <i class='fas fa-user'></i>
                 <span><?php echo htmlspecialchars($_SESSION['name']); ?> | LOGOUT</span>
             </a>
-        <?php else: ?>
+        <?php else: ?> -->
             <a style="text-decoration: none;" href="login.html">
                 <i class='fas fa-user'></i>
                 <span>LOGIN</span>
             </a>
-        <?php endif; ?>
+<!--         <?php endif; ?> -->
     </nav>
           <a style="text-decoration: none;" href="tracking.html">
           <i class="fas fa-map-marker-alt"></i>

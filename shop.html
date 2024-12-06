@@ -1,6 +1,6 @@
-<?php
+<!-- <?php
 session_start();
-?>
+?> -->
 <!DOCTYPE html>
 <html>
 
@@ -93,17 +93,17 @@ session_start();
            <button style="background-color: #eb657b;" class="btn btn-outline-secondary" id="search-button" type="submit">Search</button>
           </form>
             <nav>
-        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+<!--         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
             <a style="text-decoration: none;" href="logout.php">
                 <i class='fas fa-user'></i>
                 <span><?php echo htmlspecialchars($_SESSION['name']); ?> | LOGOUT</span>
             </a>
-        <?php else: ?>
+        <?php else: ?> -->
             <a style="text-decoration: none;" href="login.html">
                 <i class='fas fa-user'></i>
                 <span>LOGIN</span>
             </a>
-        <?php endif; ?>
+<!--         <?php endif; ?> -->
     </nav>
           <a style="text-decoration: none;" href="tracking.html">
           <i class="fas fa-map-marker-alt"></i>
@@ -130,11 +130,11 @@ session_start();
               </div>
                <!-- buy button -->
                <!-- Conditionally display Buy Now button -->
-            <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+<!--             <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?> -->
               <button type="button" class="btn-buy" onclick="submitCart()">Buy Now</button>
-            <?php else: ?>
+<!--             <?php else: ?>
               <p style="color: red; font-weight: bold;">Please <a href="login.html">log in</a>to complete your purchase.</p>
-            <?php endif; ?>
+            <?php endif; ?> -->
                     <!-- cart Close -->
                     <i class='bx bx-x' id="close-cart" ></i>
                </div>
@@ -325,7 +325,7 @@ session_start();
            </div>
        </div>
             <div style="margin-bottom: 10px;" class="btn-box">
-             <a href="shop.php">
+             <a href="shop.html">
              View All Products
               </a>
             </div>
@@ -505,7 +505,7 @@ session_start();
       </div>
   </div>
        <div style="margin-bottom: 10px;" class="btn-box">
-        <a href="shop.php">
+        <a href="shop.html">
         View All Products
          </a>
        </div>
@@ -685,7 +685,7 @@ session_start();
       </div>
   </div>
        <div style="margin-bottom: 10px;" class="btn-box">
-        <a href="shop.php">
+        <a href="shop.html">
         View All Products
          </a>
        </div>
@@ -865,7 +865,7 @@ session_start();
       </div>
   </div>
        <div style="margin-bottom: 10px;" class="btn-box">
-        <a href="shop.php">
+        <a href="shop.html">
         View All Products
          </a>
        </div>
@@ -1045,7 +1045,7 @@ session_start();
       </div>
   </div>
        <div style="margin-bottom: 10px;" class="btn-box">
-        <a href="shop.php">
+        <a href="shop.html">
         View All Products
          </a>
        </div>
